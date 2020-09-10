@@ -7,7 +7,7 @@ url = input("URL: ")
 dirname = os.path.dirname(__file__)
 driverPath = os.path.join(dirname, 'geckodriver.exe')
 
-binary = FirefoxBinary(r'C:\Program Files\Mozilla Firefox')
+binary = FirefoxBinary('/mnt/c/Program\ Files/Mozilla\ Firefox/firefox.exe')
 
 driver = webdriver.Firefox(executable_path=driverPath, firefox_binary=binary)
 
